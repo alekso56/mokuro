@@ -310,7 +310,7 @@ class OverlayGenerator:
         }
 
         if result_blk['vertical']:
-            box_style['writing-mode'] = 'vertical-rl'
+            box_style['writing-mode'] = 'horizontal-tb'
 
         box_style = ' '.join(f'{k}:{v};' for k, v in box_style.items())
         return box_style
